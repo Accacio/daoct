@@ -11,8 +11,55 @@ log in csv format with inputs and outputs.
 - scipy
 
 * Usage
+- help
 #+begin_src sh
 ./daoct -h
+#+end_src
+- result in graphviz format
+#+begin_src sh
+./daoct -g -i examples/test.csv
+#+end_src
+
+which results in
+#+begin_src dot
+digraph a {
+rankdir=LR;
+# splines = ortho
+ratio=fill
+graph [pad="0.01", nodesep="0.1", ranksep="0.01"];
+node [shape=circle];
+margin=0;
+{rank =same;}
+# size="11.7,8.3!";
+init [style=invis]
+init -> x0
+x4 [shape=doublecircle];
+x14 [shape=doublecircle];
+
+x0 -> x1 [texlbl="\scriptsize ⬆rmag2,\{1\}"]
+x1 -> x2 [texlbl="\scriptsize ⬆rmag1,\{1\}"]
+x2 -> x3 [texlbl="\scriptsize ⬆fmag1,\{1\}"]
+x3 -> x4 [texlbl="\scriptsize ⬆fmag2,\{1\}"]
+x4 -> x5 [texlbl="\scriptsize ⬇fmag2,\{1\}"]
+x5 -> x6 [texlbl="\scriptsize ⬇rmag1,\{1\}"]
+x6 -> x7 [texlbl="\scriptsize ⬇rmag2,\{1\}"]
+x7 -> x8 [texlbl="\scriptsize ⬆rmag2,\{1\}"]
+x8 -> x9 [texlbl="\scriptsize ⬆fmag2,\{1\}"]
+x9 -> x10 [texlbl="\scriptsize ⬆rmag1,\{1\}"]
+x10 -> x11 [texlbl="\scriptsize ⬇rmag2,\{1\}"]
+x11 -> x12 [texlbl="\scriptsize ⬇rmag1,\{1\}"]
+x12 -> x13 [texlbl="\scriptsize ⬇fmag2,\{1\}"]
+x13 -> x14 [texlbl="\scriptsize ⬇fmag1,\{1\}"]
+x0 -> x15 [texlbl="\scriptsize ⬆rmag1,\{2\}"]
+x15 -> x16 [texlbl="\scriptsize ⬆fmag2,\{2\}"]
+x16 -> x17 [texlbl="\scriptsize ⬆rmag2,\{2\}"]
+x17 -> x18 [texlbl="\scriptsize ⬇fmag2,\{2\}"]
+x18 -> x19 [texlbl="\scriptsize ⬇rmag1,\{2\}"]
+x19 -> x20 [texlbl="\scriptsize ⬆fmag1,\{2\}"]
+x20 -> x21 [texlbl="\scriptsize ⬆rmag1,\{2\}"]
+x21 -> x4 [texlbl="\scriptsize ⬆fmag2,\{2\}"]
+
+}
 #+end_src
 
 * References
