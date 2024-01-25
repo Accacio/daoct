@@ -5,8 +5,6 @@ Automaton With Outputs And Conditional Transitions) using data from a
 log in csv format with inputs and outputs.
 
 
-- Moreira, M. V., & Lesage, J. (2018). Enhanced discrete event model for system
-  identification with the aim of fault detection ⁎⁎this work has been partially
-  supported by the brazilian research council, cnpq, under grants 200536/2017-6
-  and 309084/2014-8. IFAC-PapersOnLine, 51(7), 160–166.
+- Moreira, M. V., & Lesage, J. (2018). Enhanced discrete event model for system identification with the aim of fault detection
+  IFAC-PapersOnLine, 51(7), 160–166.
   http://dx.doi.org/10.1016/j.ifacol.2018.06.295
