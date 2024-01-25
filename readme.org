@@ -1,10 +1,21 @@
 #+title: Daoct
 
+* About
 Command-line tool to generate DAOCT (Deterministic
 Automaton With Outputs And Conditional Transitions) using data from a
 log in csv format with inputs and outputs.
 
+* Dependencies
+- matplotlib
+- tikzplotlib
+- scipy
 
+* Usage
+#+begin_src sh
+./daoct -h
+#+end_src
+
+* References
 - Moreira, M. V., & Lesage, J. (2018). Enhanced discrete event model for system identification with the aim of fault detection
   IFAC-PapersOnLine, 51(7), 160–166.
   http://dx.doi.org/10.1016/j.ifacol.2018.06.295
